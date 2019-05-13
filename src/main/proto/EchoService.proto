@@ -7,10 +7,12 @@ package com.samples.grpc;
 
 service EchoService {
     rpc echo(EchoRequest) returns (EchoResponse) {}
+    rpc echoStream(EchoRequest) returns (stream EchoResponse) {}
 }
 
 message EchoRequest {
     string echo = 1;
+    uint32 count = 2;
 }
 
 message EchoResponse {
