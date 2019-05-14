@@ -1,9 +1,9 @@
 # grpc-sample
 This repository contains a gRPC client-server sample java application (based on maven project). It demonstrates essential basic concepts of grpc:
-- defining a protobuf contract
-- compiling it to java classes
-- implementing service logic by extending generated service stub
-- implementing client with different calling methods (unary, streaming)
+- defining a protobuf [contract](https://github.com/sargex/grpc-sample/blob/master/src/main/proto/EchoService.proto)
+- compiling it to java classes using [maven build](https://github.com/sargex/grpc-sample/blob/master/pom.xml) plugin
+- implementing [server](https://github.com/sargex/grpc-sample/blob/master/src/main/java/SampleServer.java) logic by extending generated service stub
+- implementing [client](https://github.com/sargex/grpc-sample/blob/master/src/main/java/SampleClient.java) with different calling methods (unary, streaming)
 
 ### Troubleshooting
 
