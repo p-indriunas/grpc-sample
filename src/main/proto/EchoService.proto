@@ -3,6 +3,8 @@ syntax = "proto3";
 option java_package = "com.samples.grpc";
 option java_multiple_files = true;
 
+option csharp_namespace = "Grpc.Samples";
+
 package com.samples.grpc;
 
 service EchoService {

@@ -46,7 +46,6 @@ public class SampleServer {
 
         @Override
         public void echo(EchoRequest request, io.grpc.stub.StreamObserver<EchoResponse> responseObserver) {
-
             String echo = request.getEcho();
             System.out.println("Server: \"" + echo + "\"");
 
@@ -60,8 +59,7 @@ public class SampleServer {
         }
 
         @Override
-        public void echoStream(EchoRequest request, StreamObserver<EchoResponse> responseObserver)  {
-
+        public void echoStream(EchoRequest request, StreamObserver<EchoResponse> responseObserver) {
             String echo = request.getEcho();
             int count = request.getCount();
             System.out.println("Server: \"" + echo + "\": " + count);
